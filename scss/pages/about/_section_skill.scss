@@ -1,0 +1,119 @@
+#section-skill {
+    background: url('../../../assets/images/pattern-3.png');
+    background-position: center top;
+    background-size: contain;
+    position: relative;
+    padding: 70px 0 !important;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24%;
+        height: 100%;
+        background: #1370B5;
+        z-index: 0;
+        @extend .hidden-lg;
+    }
+
+    .skills {
+        position: relative;
+        z-index: 1;
+
+        .skills-image {
+            background: url('../../../assets/images/image-7.jpg');
+            background-size: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-clip: content-box;
+            height: 100%
+        }
+
+        .skills-head {
+            p {
+                @extend .family-secondary,
+                .fs-16,
+                .my-10;
+            }
+
+            ul {
+                @extend .mb-40;
+                li {
+                    @extend .d-flex,
+                    .justify-between,
+                    .family-secondary,
+                    .py-20,
+                    .fs-16,
+                    .relative;
+                    border-bottom: 4px solid rgba(128, 128, 128, 0.248);
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        height: 4px;
+                        background: #1370B5;
+                    }
+
+                    h6 {
+                        @extend .fs-18;
+                    }
+                    &:nth-child(1) {
+                        &::after {
+                            width: 55%;
+                        }
+                    }
+                    &:nth-child(2) {
+                        &::after {
+                            width: 76%;
+                        }
+                    }
+                    &:nth-child(3) {
+                        &::after {
+                            width: 88%;
+                        }
+                    }
+                    &:nth-child(4) {
+                        &::after {
+                            width: 78%;
+                        }
+                    }
+                }
+
+                
+            }
+            .section-head {
+                align-items: flex-start !important;
+
+                h4 {
+                    text-align: start !important;
+                }
+            }
+
+            a{
+                @include btn(12px,30px, black);
+                @extend .family-secondary,.transition;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                &:hover {
+                    background: white;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width:960px) {
+        #section-skill {
+            padding: 40px !important;
+        }
+    }
+
+    @media (max-width:768px) {
+        #section-skill {
+            padding: 20px !important;
+        }
+    }
+}

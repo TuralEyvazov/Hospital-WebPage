@@ -1,0 +1,36 @@
+@import './base/reset';
+@import './base/variables';
+@import './base/colors';
+@import './base/width_heigth';
+@import './base/margin_padding';
+@import './base/fonts';
+@import './base/grid';
+@import './base/flex_box';
+@import './base/border';
+@import './base/mixin';
+
+
+//components
+@import "components/header";
+@import "pages/index/slider";
+@import "pages/index/features";
+@import "pages/index/about";
+@import "pages/index/services";
+@import "pages/index/doctor_cards";
+@import "pages/index/appointment";
+@import "pages/index/testimonials";
+@import "pages/index/pricing";
+@import "pages/index/blogs";
+@import "pages/index/client";
+@import "components/footer";
+@import "components/pages_header";
+@import "components/timetable";
+
+
+@import "pages/doctors/section_doctors";
+@import "pages/doctors/testimonials-two";
+@import "pages/doctor-details/doctor-details";
+@import "pages/about/section-appointment-two";
+@import "pages/about/section_contact";
+@import "pages/about/section_skill";
+@import "pages/contact/section_contact";

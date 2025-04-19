@@ -1,0 +1,93 @@
+#testimonials-two {
+
+    .testimonials-top {
+        height: 600px;
+    }
+
+    .testimonials-bottom {
+        background: url('../../../assets/images/pattern-10.png') $primary;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 100px 0;
+        position: relative;
+
+        .slider-content {
+            @extend .relative,.d-flex,.justify-center;
+            min-height: 400px;
+            .slider-container{
+              @extend .relative,.overflow-h,.w-70;
+              .sliders{
+                @extend .absolute,.h-100,.d-flex,.justify-center;
+                transition: all .6s ease-out;
+                width: max-content;
+                z-index: 10;
+                top: 0;
+                left: 0;
+                pointer-events: auto;
+                .slider{
+                  @extend .d-flex,.justify-center,.item-center,.flex-column,.text-center;
+                  .slider-img{
+                    width: 110px;
+                    border-radius: 50%;
+                    position: relative;
+                    img{
+                      border-radius: 50%;
+                    }
+                    span{
+                      position: absolute;
+                      bottom: -10px;
+                      left: 50%;
+                      transform: translate(-50%,0);
+                      z-index: 10;
+                      font-size: 20px;
+                      padding:3px 6px;
+                      background-color:white;
+                      border-radius: 50%;
+                      box-shadow: 0 0 8px #00000047;            
+                    }
+                  }
+                  .slider-text{
+                    @extend .family-secondary;
+                    h5{
+                      @extend .fs-20,.my-10,.text-primary;
+      
+                    }
+      
+                    span,p{
+                      @extend .fs-16,.text-dark-grey;
+                    }
+                    p{
+                      margin-top: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+      
+          .navigate {
+            @extend .absolute,.d-flex,.justify-between,.item-center,.w-100,.h-100,.px-10;
+            left: 0;
+            top: -20px;
+            button {
+              @extend .rounded-full,.text-primary,.fw-600,.px-20,.py-16;
+              border: 2px solid $primary;
+            }
+          }
+
+        .comment-heading {
+            height: 400px;
+            @extend .d-flex,
+            .justify-center,
+            .mt-60;
+
+            .appointment-link {
+                @extend .py-14,
+                .px-30,
+                .bg-black;
+            }
+
+        }
+    }
+}

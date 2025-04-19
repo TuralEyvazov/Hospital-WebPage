@@ -1,0 +1,47 @@
+#timetable{
+    @extend .mb-60; 
+    .table{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.411);
+        width: 100%;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            @extend .family-secondary;
+            .time-head{
+                background-color: black !important;
+            }
+            th{
+                color: white;
+                border: 1px solid white;
+                padding: 20px 0;
+                width: 90px;
+                font-size: 14px;
+                @extend .bg-primary;
+            }
+            td{
+                @extend .bg-primary;
+                border: 1px solid white;
+                height: 80px;
+                text-align: center;
+                min-width: 110px;
+                color: white;
+                font-size: 14px;
+                &:not(:nth-child(1)){
+                    background-color: white;
+                    border: none;
+                    color: black;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px){
+    #timetable{
+        .table{
+           overflow-x: scroll !important;
+        }
+    }
+    
+}

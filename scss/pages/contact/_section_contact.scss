@@ -1,0 +1,70 @@
+#section-message{
+    @extend .bg-grey;
+    padding: 100px 0;
+    .contact-us{
+        .card{
+            height: 150px;
+            @extend .w-90,.family-secondary,.d-flex,.p-30;
+            border-bottom: 3px solid transparent;
+            transition: all .3s;
+
+            &:hover{
+                box-shadow: 0 0 20px 2px rgba(128, 128, 128, 0.256);
+                background-color: white;
+                transform: translateY(-20px);
+                border-bottom-color:#1370B5; 
+            }
+            .card-icon{
+                @extend .text-primary,.fs-40,.mr-20;
+            }
+            h5{
+                @extend .fs-20; 
+            }
+            p{
+                @extend .text-dark-grey; 
+            }
+        }
+
+        form{
+            input {
+                @extend .w-100,
+                .border-1,
+                .family-secondary,
+                .bg-white,
+                .mb-18,
+                .fs-14;
+                padding: 14px;
+                transition: all .3s;
+                outline: 1px solid transparent !important;
+
+                &:focus {
+                    outline: 1px solid #1370B5 !important;
+                }
+            }
+
+            textarea {
+                height: 200px;
+                outline: none;
+                resize: none;
+                @extend .w-100,
+                .border-1,
+                .p-10,
+                .family-secondary,
+                .bg-white,
+                .fs-14;
+                transition: all .3s;
+                outline: 1px solid transparent !important;
+
+                &:focus {
+                    outline: 1px solid #1370B5 !important;
+                }
+            }
+
+            button {
+                @include btn(12px, 50px, #1370B5);
+                @extend .family-secondary,
+                .mt-30;
+            }
+        }
+    }
+}

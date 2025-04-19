@@ -1,0 +1,119 @@
+#header{
+  @extend .mb-40;
+  .popup{
+    background-color: rgba(26, 25, 25, 0.84);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    span{
+      top: 100px;
+      right: 10%;
+      cursor: pointer;
+    }
+    form{
+      @extend .w-100,.d-flex,.justify-between,.item-center;
+      input{
+        @extend .w-80,.fs-14,.px-10,.py-14,.family-secondary,.text-white;
+        height: 50px;
+        border: 1px solid #1370b5;
+        border-radius: 5px 0 0 5px;
+      }
+      button{
+        @extend .family-secondary,.bg-primary,.w-20,.fs-14,.text-white;
+        height: 50px !important;
+        border: 1px solid #1370b5;
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+
+  .header-body-sticky{
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .sidebar{
+    z-index: 998;
+    top: 0;
+    left: -100%;
+    min-height: 100vh;
+    @extend .bg-grey;
+    .sidebar-menu{
+      li{
+        @extend .bg-primary,.text-white,.mb-10,.rounded-6,.px-10,.fs-18,.family-secondary;
+        height: 40px;
+        a{
+          @extend .d-flex ,.item-center;
+          height: inherit;
+        }
+      }
+    }
+  }
+
+  .social{
+    padding-bottom: 20px;
+    a{
+      width: 30px;
+      height: 30px;
+      @extend .d-flex, .item-center, .justify-center,.rounded-full, .transition;
+      &:hover{
+        @extend .bg-primary, .text-white;;
+      }
+    }
+  }
+  .navbar{
+    @extend .border-1,.d-flex,.item-center,.px-20;
+    border-radius: 50px;
+    height: 75px;
+    .navbar-menu{
+      @extend .fs-18;
+      height: 100%;
+      ul{
+        height: 100%;
+        li{
+          @extend .d-flex,.item-center,.justify-center;
+          height: inherit;
+        }
+      }
+    }
+    .header-search{
+      .btn{
+        box-shadow: 0 0 8px 2px rgba(110, 110, 110, 0.12);
+        &:hover{
+          @extend .bg-white, .text-primary,.transition;
+        }
+      }
+      .search{
+        box-shadow: 0 0 8px 2px rgba(110, 110, 110, 0.12);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  #header{
+    margin: 0 !important;
+    .header-body{
+      margin: 0 !important;
+      .navbar{
+        border-radius:0 !important;
+        padding: 0 10px !important;
+        background: white !important;
+        border: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .sidebar{
+    width: 80% !important;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar{
+   left: -100% !important;
+  }
+}

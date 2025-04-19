@@ -1,0 +1,53 @@
+#features {
+  top: -100px;
+  z-index: 100;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    @extend .p-30, .family-secondary, .transition, .rounded-3, .overflow-h, .d-flex, .justify-between, .flex-column, .mx-10, .mb-20,;
+    width: 95% !important;
+    height: 95% !important;
+    background-size: contain;
+    background: white url("https://elite-themes.com/html/medicoz/images/icons/pattern-1.png") left no-repeat;
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.25);
+    &:hover {
+      transform: translateY(-30px);
+      @extend .bg-primary, .text-white;
+
+      span {
+        @extend .text-white
+      }
+    }
+    span {
+      @extend .fs-70, .text-primary;
+    }
+
+    h4 {
+      margin: 20px 0;
+      font-size: 22px;
+    }
+
+    p {
+      @extend .fs-14;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  #features {
+    top: 0 !important;
+    background-color: #1370b5;
+    padding: 30px 0;
+  }
+}
+@media (max-width: 768px) {
+  #features {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  p{
+    font-size:16px !important;
+  }
+}

@@ -1,0 +1,98 @@
+#section-contact {
+    background: url('../../../assets/images/pattern-12.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 100px 0;
+
+    .card {
+        display: flex;
+        justify-content: center;
+
+        .contact-card {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            form {
+                @extend .family-secondary,
+                .mt-40;
+                background-color: #fff;
+                padding: 50px;
+                box-shadow: 0 0 10px rgba(128, 128, 128, 0.374);
+                border-radius: 10px;
+
+                input {
+                    @extend .w-100,
+                    .border-1,
+                    .family-secondary,
+                    .bg-white,
+                    .fs-14,
+                    .mb-20;
+                    padding: 14px;
+                    transition: all .3s;
+                    outline: 1px solid transparent !important;
+
+                    &:focus {
+                        outline: 1px solid #1370B5 !important;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 160px;
+                    outline: none;
+                    resize: none;
+                    @extend .w-100,
+                    .border-1,
+                    .p-10,
+                    .family-secondary,
+                    .mt-18,
+                    .fs-14;
+                    transition: all .3s;
+                    outline: 1px solid transparent !important;
+
+                    &:focus {
+                        outline: 1px solid #1370B5 !important;
+                    }
+                }
+
+                button {
+                    @include btn(12px, 14px, #1370B5);
+                    @extend .family-secondary,
+                    .mt-30;
+                }
+            }
+        }
+        .contact-info{
+            width: 90%;
+            padding: 30px 0;
+            @extend .family-secondary,.px-10;
+            ul{
+                li{
+                    @extend .d-flex,.justify-between,.text-dark-grey,.py-20,.fs-18;
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.364);
+                    i{
+                        @extend .text-primary,.mr-4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    #section-contact {
+        .contact-card {
+            max-width: 500px !important;
+            form {
+                padding: 30px !important;
+            }
+        }
+        .contact-info{
+            max-width: 500px !important;
+        }
+    }
+}

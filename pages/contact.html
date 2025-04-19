@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/images/svg-icon/Hospital.png" type="image/x-icon">
+    <title>Tibb Mərkəzi</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <header id="header" class="bg-white">
+        <div class="popup fixed d-none absolute w-100 h-vh-100 d-flex justify-center item-center transition">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10">
+                <span class="close-popup absolute fs-34 text-white"><i class="fa-regular fa-xmark-large"></i></span>
+                <form>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button>Axtar</button>
+                </form>
+            </div>
+        </div>
+        <div class="sidebar absolute w-50 d-flex flex-column justify-between transition border-1 p-20 hidden show-md">
+            <div>
+                <div class="logo mb-20 d-flex justify-center">
+                    <a href="index.html">
+                        <img src="../assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="../index.html">
+                            Ana Səhifə
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./doctors.html">
+                            Həkimlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./services.html">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            Haqqımızda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">
+                            Əlaqə
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <ul class="social d-flex justify-between gap-10">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.x.com" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-top hidden-lg p-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 d-flex flex-column justify-center">
+                        <ul class="d-flex gap-40 fs-16 family-secondary">
+                            <li>
+                                <i class="text-primary fa-regular fa-map-location-dot mr-6"></i>
+                                <span class="text-dark-grey">Tiblisi prospekti 12, Baku, Baku AZ</span>
+                            </li>
+                            <li>
+                                <i class="text-primary fa-regular fa-clock mr-6"></i>
+                                <span class="text-dark-grey">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="social d-flex gap-10 justify-end">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.x.com" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-body family-primary mx-10">
+            <div class="container">
+                <div class="row navbar bg-grey">
+                    <div class="col-lg-3">
+                        <a href="../index.html">
+                            <img src="../assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 hidden-md navbar-menu family-secondary">
+                        <ul class="d-flex item-center fs-16 justify-between">
+                            <li>
+                                <a href="../index.html">
+                                    Ana Səhifə
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./doctors.html">
+                                    Həkimlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./services.html">
+                                    Xidmətlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html">
+                                    Haqqımızda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">
+                                    Əlaqə
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header-search d-flex justify-end item-center">
+                            <span
+                                class="fs-20 p-10 mr-16 bg-white search d-flex justify-center item-center rounded-full"><i
+                                    class="fa-regular fa-magnifying-glass"></i></span>
+                            <button
+                                class="hidden-lg bg-primary btn fw-600 text-white fs-16 family-secondary px-20 py-12 rounded-6">
+                                Randevu al
+                            </button>
+                            <button class="hidden open-menu show-md fs-34 text-primary family-secondary rounded-6">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pages-header">
+        <div class="container">
+            <div class="pages-title d-flex justify-end item-center pr-30">
+                <div class="title">
+                    <h4 class="text-primary family-secondary fs-38 mb-10">Əlaqə</h4>
+                    <div class="pages-link family-secondary fs-18">
+                        <a href="../index.html">Ana Səhifə</a>
+                        <i class="fa-light fa-arrow-right mx-10"></i>
+                        <span>Əlaqə</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-map" class="py-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="px-20 my-60"><iframe width="100%" height="500" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Azerbaijan%20Street,%20Baku+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                href="https://www.gps.ie/collections/drones/">drones ireland</a></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-message">
+        <div class="section-head relative mb-60">
+            <!--                        section-head classi mixin.scss falyda class olaraq verilib ve her defe eyni istifade olugu ucun-->
+            <span>İndi əlaqə saxlayın</span>
+            <h4>Bizə Mesaj yazın!</h4>
+            <i class="fa-light fa-wave-pulse"></i>
+        </div>
+        <div class="contact-us">
+            <div class="container">
+                <div class="row gap-row-18 contact">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 cards justify-center d-flex">
+                        <div class="card">
+                            <span class="card-icon">
+                                <i class="fa-thin fa-earth-americas"></i>
+                            </span>
+                            <div class="card-head">
+                                <h5>Adress</h5>
+                                <p class="d-flex flex-column">
+                                    <span>185, Pickton Near Street</span>
+                                    <span>Los Angeles, USA</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 cards justify-center d-flex">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="fa-thin fa-mobile-screen"></i>
+                            </div>
+                            <div class="card-head">
+                                <h5>Telefon</h5>
+                                <p class="d-flex flex-column">
+                                    <span>(012) 345 67 89</span>
+                                    <span>(051) 345 67 89</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 justify-center d-flex">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="fa-thin fa-envelope"></i>
+                            </div>
+                            <div class="card-head">
+                                <h5>Email</h5>
+                                <p class="d-flex flex-column">
+                                    <span>support@example.com</span>
+                                    <span>support@example.com</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="mt-60">
+                    <div class="row">
+                        <div class="d-flex justify-center item-center col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-inputs w-94">
+                                <input type="text" name="name" placeholder="Adınız">
+                                <input type="email" name="email" placeholder="Emailiniz">
+                                <input type="number" name="phone" placeholder="Telefon">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-center item-center col-md-12 col-sm-12 col-xs-12">
+                            <div class="message w-94">
+                                <textarea name="message" id="" placeholder="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-center item-center">
+                            <div class="submit w-96 d-flex justify-center">
+                                <button>Gonder</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="row gap-row-28 px-18">
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="../assets/images/client-1.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="../assets/images/client-2.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="../assets/images/client-3.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="../assets/images/client-4.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="../assets/images/client-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row gap-row-22">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="social">
+                            <h4>
+                                <a href="../index.html">
+                                    <img src="../assets/images/logo-2.png" alt="">
+                                </a>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <p>Klinikamız qabaqcıl bərpaedici klinika üçün dünya səviyyəli bir obyekt təmin
+                                        etmək
+                                        üçün böyüdü.</p>
+                                </li>
+                                <li>
+                                    <p>Biz 30 ildən çox keyfiyyətli təlim və təcrübəmizlə AUS-da ən ixtisaslı implant
+                                        təminatçıları arasındayıq.</p>
+                                </li>
+                                <li class="link">
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.x.com" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com" target="_blank"><i
+                                            class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.pinterst.com" target="_blank"><i
+                                            class="fa-brands fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="department">
+                            <h5>Departments</h5>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Cərrahiyyə və Radiologiya</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Ailə Təbabəti</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Qadın Sağlamlığı</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Optik</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Pediatriya</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Dermatologiya</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="news">
+                            <h5>Xəbərlər</h5>
+                            <ul>
+                                <li class="d-flex">
+                                    <div class="card-img">
+                                        <img src="../assets/images/post-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <p>İnteqrativ Tibb
+                                            & Xərçəng Müalicəsi.</p>
+                                        <span>11 iyul 2020-ci il</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="card-img">
+                                        <img src="../assets/images/post-thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Daha yaxşısına nail olmaq
+                                            Sağlamlığa qulluq vaxtı.</p>
+                                        <span>1 avqust 2020-ci il</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="card-img">
+                                        <img src="../assets/images/post-thumb-3.jpg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Böyük Səhiyyə
+                                            Xəstələr üçün.</p>
+                                        <span>1 avqust 2020-ci il</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="contact">
+                            <h5>Əlaqə</h5>
+                            <ul>
+                                <li>
+                                    <i class="fa-light fa-location-dot"></i>
+                                    <span>
+                                        2130 Fulton St. San Dieqo <br>CA 94117-1080 ABŞ
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-light fa-phone-volume"></i>
+                                    <span>
+                                        Bazar ertəsi - Cümə: 08:30 - 18:00 <br>+898 68679 575
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-light fa-envelope"></i>
+                                    <span>Sualiniz var? <br>info@gmail.com</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-light fa-timer"></i>
+                                    <span>Bazar ertəsi - Şənbə 8.00 - 18.00 <br>Bazar günü QAPALI</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 card">
+                        <div class="box">
+                            Copyright © 2020 Bold Touch Bütün hüquqlar qorunur.
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 card">
+                        <ul>
+                            <li>
+                                <a href="">Məxfilik Siyasəti</a>
+                                <i class="fa-solid fa-pipe"></i>
+                            </li>
+                            <li>
+                                <a href="">Əlaqə</a>
+                                <i class="fa-solid fa-pipe"></i>
+                            </li>
+                            <li>
+                                <a href="">Təchizatçı</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/pages/contact.js"></script>
+
+</body>
+
+</html>

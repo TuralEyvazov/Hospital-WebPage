@@ -1,0 +1,11 @@
+.clients{
+  @extend .bg-white,.py-50;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  .card{
+    display: flex;
+    justify-content: center;
+  }
+  .img{
+    max-width: 200px;
+  }
+}

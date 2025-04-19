@@ -1,0 +1,72 @@
+#section-appointment {
+  @extend .w-100, .mb-60, .relative;
+  min-height: 650px;
+  .bg{
+    @extend .absolute,.bg-primary;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+  }
+  .appointment-head{
+    @extend .p-20,.text-white,.my-50;
+    height: 450px;
+    h5{
+      @extend .py-20,.fs-50,.family-secondary;
+    }
+    span{
+      @extend .fs-20,.family-secondary,.fw-600;
+      text-transform: uppercase;
+
+    }
+    p{
+      @extend .family-secondary,.fs-30,.fw-600,.pb-20,.pt-6;
+    }
+    a{
+      @include btn(16px,40px,black);
+      @extend .family-secondary,.transition,.fw-600;
+      &:hover{
+        background-color: #fff !important;
+        color: black;
+      }
+    }
+  }
+  .appointment-bottom{
+    min-height: 300px;
+    .row{
+      background: url("../../assets/images/pattern-4.png") no-repeat left top white;
+      padding: 20px 0;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    }
+    .bottom-card{
+      @extend .d-flex,.justify-center,.item-center,.flex-column;
+      height: 240px;
+      span{
+        @extend .fs-50,.rounded-full,.d-flex,.justify-center,.item-center,.text-primary,.transition;
+        border: 2px dashed;
+        width: 100px;
+        height: 100px;
+        &:hover{
+          @extend .text-white,.bg-primary;
+          border-color: transparent !important;
+        }
+      }
+      h5{
+        @extend .py-20,.fs-18,.family-secondary,.text-dark-grey;
+      }
+      p{
+        @extend .fs-30,.family-secondary;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .appointment-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+

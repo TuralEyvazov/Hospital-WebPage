@@ -1,0 +1,68 @@
+#pricing{
+  position: relative;
+  background:url("../../assets/images/pattern-6.png") no-repeat center center;
+  background-size: cover;
+  padding: 160px 0;
+  .bg-opacity{
+    background-color: rgba(156, 165, 171, 0.11);
+    z-index: -1;
+  }
+  .card{
+    @extend .d-flex,.justify-center,.item-center;
+  }
+  .pricing-card{
+    @extend .d-flex,.flex-column,.justify-center,.item-center,.bg-white;
+    width: 90%;
+    padding: 0 30px 20px 30px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+    &:hover{
+      box-shadow: 0 10px 22px 2px rgba(152, 152, 152, 0.24);
+      a{
+        background-color: #1370b5;
+        color: #fff;
+      }
+    }
+
+    .price{
+      @extend .w-100,.d-flex,.justify-center,.item-center,.flex-column;
+      background-color: rgba(19, 112, 181, 0.11);
+      height: 100px;
+      span{
+        @extend .fs-34,.fw-600,.family-secondary,.text-primary;
+      }
+      p{
+        @extend .fs-16,.family-secondary,.mb-10;
+      }
+    }
+
+    h5{
+      @extend .fs-22,.fw-600,.family-primary,.text-primary,.my-20,.w-100,.text-center,.pb-10;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.29);
+    }
+    ul{
+      @extend .w-100,;
+      li{
+        @extend .py-12,.family-secondary;
+        font-size: 14px;
+        &:not(:last-child){
+          border-bottom: 1px dashed rgba(128, 128, 128, 0.29);
+        }
+        span{
+          @extend .text-dark-grey
+        }
+        i{
+          @extend .text-primary,.mr-8;
+        }
+      }
+    }
+    a{
+      @extend .family-secondary;
+      @include btn(8px,30px,white);
+      border: 2px solid #1370b5;
+      color: #1370b5;
+      margin-top: 20px;
+      transition: all .2s ease-in-out;
+    }
+  }
+}

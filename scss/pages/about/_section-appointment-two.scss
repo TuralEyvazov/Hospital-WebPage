@@ -1,0 +1,46 @@
+#section-appointment-two {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    .row {
+        background: url("../../assets/images/pattern-4.png") no-repeat left top white;
+        padding: 20px 0;
+    }
+
+    .bottom-card {
+        @extend .d-flex,
+        .justify-center,
+        .item-center,
+        .flex-column;
+        height: 240px;
+
+        span {
+            @extend .fs-50,
+            .rounded-full,
+            .d-flex,
+            .justify-center,
+            .item-center,
+            .text-primary,
+            .transition;
+            border: 2px dashed;
+            width: 100px;
+            height: 100px;
+
+            &:hover {
+                @extend .text-white,
+                .bg-primary;
+                border-color: transparent !important;
+            }
+        }
+
+        h5 {
+            @extend .py-20,
+            .fs-18,
+            .family-secondary,
+            .text-dark-grey;
+        }
+
+        p {
+            @extend .fs-30,
+            .family-secondary;
+        }
+    }
+}

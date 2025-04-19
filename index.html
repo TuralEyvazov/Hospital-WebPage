@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/images/svg-icon/Hospital.png" type="image/x-icon">
+    <title>Tibb Mərkəzi</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header id="header" class="bg-white">
+        <div class="popup fixed d-none absolute w-100 h-vh-100 d-flex justify-center item-center transition">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10">
+                <span class="close-popup absolute fs-34 text-white"><i class="fa-regular fa-xmark-large"></i></span>
+                <form>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button>Axtar</button>
+                </form>
+            </div>
+        </div>
+        <div class="sidebar absolute w-50 d-flex flex-column justify-between transition border-1 p-20 hidden show-md">
+            <div>
+                <div class="logo mb-20 d-flex justify-center">
+                    <a href="index.html">
+                        <img src="./assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="./index.html">
+                            Ana Səhifə
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/doctors.html">
+                            Həkimlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/services.html">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/about.html">
+                            Haqqımızda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">
+                            Əlaqə
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <ul class="social d-flex justify-between gap-10">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.x.com" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="header-top hidden-lg p-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 d-flex flex-column justify-center">
+                        <ul class="d-flex gap-40 fs-16 family-secondary">
+                            <li>
+                                <i class="text-primary fa-regular fa-map-location-dot mr-6"></i>
+                                <span class="text-dark-grey">Tiblisi prospekti 12, Baku, Baku AZ</span>
+                            </li>
+                            <li>
+                                <i class="text-primary fa-regular fa-clock mr-6"></i>
+                                <span class="text-dark-grey">Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="social d-flex gap-10 justify-end">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.x.com" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-body family-primary mx-10">
+            <div class="container">
+                <div class="row navbar bg-grey">
+                    <div class="col-lg-3">
+                        <a href="index.html">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 hidden-md navbar-menu family-secondary">
+                        <ul class="d-flex item-center fs-16 justify-between">
+                            <li>
+                                <a href="./index.html">
+                                    Ana Səhifə
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pages/doctors.html">
+                                    Həkimlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pages/services.html">
+                                    Xidmətlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pages/about.html">
+                                    Haqqımızda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./pages/contact.html">
+                                    Əlaqə
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="header-search d-flex justify-end item-center">
+                            <span
+                                class="fs-20 p-10 mr-16 bg-white search d-flex justify-center item-center rounded-full"><i
+                                    class="fa-regular fa-magnifying-glass"></i></span>
+                            <button
+                                class="hidden-lg bg-primary btn fw-600 text-white fs-16 family-secondary px-20 py-12 rounded-6">
+                                Randevu al
+                            </button>
+                            <button class="hidden open-menu show-md fs-34 text-primary family-secondary rounded-6">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="header-body-sticky bg-white border-1 py-12">
+            <div class="container">
+                <div class="menu d-flex item-center">
+                    <div class="logo mr-60">
+                        <a href="">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="d-flex justify-between ml-60 w-50 family-secondary">
+                        <li>Ana Səhifə</li>
+                        <li>Həkimlər</li>
+                        <li>Xidmətlər</li>
+                        <li>Blogs</li>
+                        <li>Əlaqə</li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+    </header>
+    <section id="index-sliders" class="relative overflow-h">
+        <div class="navigate absolute w-100 h-100 d-flex justify-between item-center">
+            <button class="left"><i class="fa-regular fa-angle-left"></i></button>
+            <button class="right"><i class="fa-regular fa-angle-right"></i></button>
+        </div>
+        <div class="sliders overflow-h relative">
+        </div>
+    </section>
+    <section id="features" class="relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="box">
+                        <span><i class="fa-thin fa-hand-holding-heart"></i></span>
+                        <h4>Keyfiyyət və Təhlükəsizlik</h4>
+                        <p>Delmont xəstəxanamız ən müasir texnologiyadan istifadə edir və əsl mütəxəssislərdən ibarət
+                            komanda
+                            çalışır. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="box">
+                        <span><i class="fa-thin fa-computer-classic"></i></span>
+                        <h4>Aparıcı Texnologiya</h4>
+                        <p>Delmont xəstəxanamız ən müasir texnologiyadan istifadə edir və əsl mütəxəssislərdən ibarət
+                            komanda
+                            çalışır.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="box">
+                        <span><i class="fa-thin fa-user-nurse"></i></span>
+                        <h4>Təcrübə üzrə ekspertlər</h4>
+                        <p>Delmont xəstəxanamız ən müasir texnologiyadan istifadə edir və əsl mütəxəssislərdən ibarət
+                            komanda
+                            çalışır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-about" class="w-100">
+        <div class="container">
+            <div class="row">
+                <div class="section-left col-lg-6 col-md-6 col-sm-12 my-10">
+                    <div class="about-images d-flex justify-center item-center flex-wrap h-100 relative">
+                        <div class="base-img image-1 image w-70">
+                            <img src="./assets/images/image-1.png" alt="">
+                        </div>
+                        <div class="image-2 image w-54">
+                            <img src="./assets/images/image-2.png" alt="">
+                        </div>
+                        <div class="image-3 image w-40">
+                            <img src="./assets/images/image-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 my-12">
+                    <div class="about-info px-12">
+                        <div class="section-head item-start">
+                            <!--                        section-head classi mixin.scss falyda class olaraq verilib ve her defe eyni istifade olugu ucun-->
+                            <span>Tibbi Uzmanlığımız</span>
+                            <h4 style="text-align: start;">Biz Tədqiqatda Standartlar təyin edirik, daha çox, Klinik Baxım.</h4>
+                            <i class="fa-light fa-wave-pulse"></i>
+                        </div>
+                        <p>Biz tam tibbi xidmətləri təqdim edirik ki, hər bir insan keyfiyyətli tibbi yardım almaq
+                            imkanı
+                            əldə etsin.
+
+                            Klinikamız diş itkisinin müalicəsi, diş kosmetikası və qabaqcıl bərpaedici stomatologiya
+                            üçün
+                            dünya səviyyəli bir vasitə təmin etmək üçün böyüdü. Biz 30 ildən çox təcrübə ilə
+                            AUS-da ən ixtisaslı implant təminatçıları arasındayıq.</p>
+                        <div class="d-flex item-center">
+                            <div class="signature mr-20">
+                                <img src="./assets/images/signature.png" alt="">
+                            </div>
+                            <a href="./pages/services.html">Daha çox...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-services" class='section-services relative'>
+        <div class="section-head relative mb-60">
+            <!--                        section-head classi mixin.scss falyda class olaraq verilib ve her defe eyni istifade olugu ucun-->
+            <span>Servisimiz</span>
+            <h4>Biz xəstələrimizə qayğı göstəririk.</h4>
+            <i class="fa-light fa-wave-pulse"></i>
+        </div>
+        <div class="container">
+            <div class="row gap-row-20 cards">
+
+            </div>
+        </div>
+    </section>
+    <section id="our-doctors" class="our-doctors">
+        <div class="section-head relative mb-60">
+            <!--                        section-head classi mixin.scss falyda class olaraq verilib ve her defe eyni istifade olugu ucun-->
+            <span>Həkimlərimiz</span>
+            <h4>Fədakar Həkim Komandamız</h4>
+            <i class="fa-light fa-wave-pulse"></i>
+        </div>
+        <div class="container">
+            <div class="row justify-center cards gap-row-18"></div>
+        </div>
+    </section>
+    <section id="section-appointment">
+        <div class="bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="appointment-head">
+                        <span>Check-up üçün həkimə ehtiyacınız varmı?</span>
+                        <h5>Sadəcə görüş təyin edin
+                            və Hazırdır!</h5>
+                        <span>Təklifinizi alın və ya zəng edin:</span>
+                        <p>(+99451) 321-45-67</p>
+                        <a href="">Randevu alın</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="appointment-img">
+                        <img src="./assets/images/image-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="appointment-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="bottom-card">
+                            <span><i class="fa-thin fa-user-nurse-hair"></i></span>
+                            <h5>İllərin Təcrübəsi</h5>
+                            <p>25</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="bottom-card">
+                            <span><i class="fa-thin fa-users-medical"></i></span>
+                            <h5>Tibb İxtisasları</h5>
+                            <p>470</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="bottom-card">
+                            <span><i class="fa-thin fa-hospital"></i></span>
+                            <h5>Tibb Məntəqələri</h5>
+                            <p>12</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="bottom-card">
+                            <span><i class="fa-thin fa-person-breastfeeding"></i></span>
+                            <h5>Xoşbəxt Xəstələr</h5>
+                            <p>9086</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <div class="bg-opacity"></div>
+        <div class="section-head relative mb-60">
+            <!--                        section-head classi mixin.scss falyda class olaraq verilib ve her defe eyni istifade olugu ucun-->
+            <span>Xoşbəxt Pasiyent</span>
+            <h4>Xəstələrimiz nə deyir</h4>
+            <i class="fa-light fa-wave-pulse"></i>
+        </div>
+        <div class="testimonials-slider">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="slider-container">
+                        <div class="sliders d-flex">
+                            
+                        </div>
+                    </div>
+                    <div class="navigate">
+                        <button class="prev">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="next">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="bg-opacity"></div>
+        <div class="section-head relative mb-60">
+            <!--                        section-head classi mixin.scss falyda class olaraq verilib ve her defe eyni istifade olugu ucun-->
+            <span>Qiymətləndirməmiz</span>
+            <h4>Qiymət Planı</h4>
+            <i class="fa-light fa-wave-pulse"></i>
+        </div>
+        <div class="pricing-content relative">
+            <div class="container">
+                <div class="row pricing-cards justify-center gap-row-26">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blogs" class="py-60">
+        <div class="section-head relative mb-60 mt-60">
+            <!--                        section-head classi mixin.scss falyda class olaraq verilib ve her defe eyni istifade olugu ucun-->
+            <span>BLOGUMUZ</span>
+            <h4>Son Məqalələr və Xəbərlər</h4>
+            <i class="fa-light fa-wave-pulse"></i>
+        </div>
+        <div class="container">
+            <div class="row justify-center gap-row-22">
+                <div class="col-lg-4 card">
+                    <div class="blog-card">
+                        <div class="card-img">
+                            <img src="./assets/images/news-1.jpg" alt="">
+                            <span>Mart 9, 2025</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="">Kök kanalının müvəffəqiyyət dərəcəsi nədir?</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum dolore et
+                                    fugiat
+                                    fugit illum...</p>
+                            </div>
+                            <div class="card-comment">
+                                <h6>By Admin</h6>
+                                <ul class="">
+                                    <li>
+                                        <span>10</span>
+                                        <i class="fa-light fa-heart"></i>
+                                    </li>
+                                    <li>
+                                        <span>3</span>
+                                        <i class="fa-light fa-comments"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 card">
+                    <div class="blog-card">
+                        <div class="card-img">
+                            <img src="./assets/images/news-2.jpg" alt="">
+                            <span>Mart 10, 2025</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="">Yaşlılarla necə davranmalısınız?
+                                    Sirli xəstəliklər</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum dolore et
+                                    fugiat
+                                    fugit illum...</p>
+                            </div>
+                            <div class="card-comment">
+                                <h6>By Admin</h6>
+                                <ul class="">
+                                    <li>
+                                        <span>10</span>
+                                        <i class="fa-light fa-heart"></i>
+                                    </li>
+                                    <li>
+                                        <span>3</span>
+                                        <i class="fa-light fa-comments"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 card">
+                    <div class="blog-card">
+                        <div class="card-img">
+                            <img src="./assets/images/news-3.jpg" alt="">
+                            <span>Mart 15, 2025</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="">Kardiologiya şöbəsinə necə kömək etmək olar?</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum dolore et
+                                    fugiat
+                                    fugit illum...</p>
+                            </div>
+                            <div class="card-comment">
+                                <h6>By Admin</h6>
+                                <ul class="">
+                                    <li>
+                                        <span>10</span>
+                                        <i class="fa-light fa-heart"></i>
+                                    </li>
+                                    <li>
+                                        <span>3</span>
+                                        <i class="fa-light fa-comments"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="row gap-row-28 px-18">
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="./assets/images/client-1.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="./assets/images/client-2.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="./assets/images/client-3.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="./assets/images/client-4.png" alt="">
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="img">
+                        <img src="./assets/images/client-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row gap-row-22">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="social">
+                            <h4>
+                                <a href="index.html">
+                                    <img src="./assets/images/logo-2.png" alt="">
+                                </a>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <p>Klinikamız qabaqcıl bərpaedici klinika üçün dünya səviyyəli bir obyekt təmin
+                                        etmək
+                                        üçün böyüdü.</p>
+                                </li>
+                                <li>
+                                    <p>Biz 30 ildən çox keyfiyyətli təlim və təcrübəmizlə AUS-da ən ixtisaslı implant
+                                        təminatçıları arasındayıq.</p>
+                                </li>
+                                <li class="link">
+                                    <a href="https://www.facebook.com" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.x.com" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com" target="_blank"><i
+                                            class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.pinterst.com" target="_blank"><i
+                                            class="fa-brands fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="department">
+                            <h5>Departments</h5>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Cərrahiyyə və Radiologiya</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Ailə Təbabəti</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Qadın Sağlamlığı</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Optik</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Pediatriya</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <a href="">Dermatologiya</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="news">
+                            <h5>Xəbərlər</h5>
+                            <ul>
+                                <li class="d-flex">
+                                    <div class="card-img">
+                                        <img src="./assets/images/post-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <p>İnteqrativ Tibb
+                                            & Xərçəng Müalicəsi.</p>
+                                        <span>11 iyul 2020-ci il</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="card-img">
+                                        <img src="./assets/images/post-thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Daha yaxşısına nail olmaq
+                                            Sağlamlığa qulluq vaxtı.</p>
+                                        <span>1 avqust 2020-ci il</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="card-img">
+                                        <img src="./assets/images/post-thumb-3.jpg" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Böyük Səhiyyə
+                                            Xəstələr üçün.</p>
+                                        <span>1 avqust 2020-ci il</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 card">
+                    <div class="footer-card">
+                        <div class="contact">
+                            <h5>Əlaqə</h5>
+                            <ul>
+                                <li>
+                                    <i class="fa-light fa-location-dot"></i>
+                                    <span>
+                                        2130 Fulton St. San Dieqo <br>CA 94117-1080 ABŞ
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa-light fa-phone-volume"></i>
+                                    <span>
+                                        Bazar ertəsi - Cümə: 08:30 - 18:00 <br>+898 68679 575
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-light fa-envelope"></i>
+                                    <span>Sualiniz var? <br>info@gmail.com</span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-light fa-timer"></i>
+                                    <span>Bazar ertəsi - Şənbə 8.00 - 18.00 <br>Bazar günü QAPALI</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 card">
+                        <div class="box">
+                            Copyright © 2020 Bold Touch Bütün hüquqlar qorunur.
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 card">
+                        <ul>
+                            <li>
+                                <a href="">Məxfilik Siyasəti</a>
+                                <i class="fa-solid fa-pipe"></i>
+                            </li>
+                            <li>
+                                <a href="">Əlaqə</a>
+                                <i class="fa-solid fa-pipe"></i>
+                            </li>
+                            <li>
+                                <a href="">Təchizatçı</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/pages/index.js" type="module"></script>
+</body>
+
+</html>
